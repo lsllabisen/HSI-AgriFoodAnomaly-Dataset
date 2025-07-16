@@ -1,46 +1,69 @@
-# HSI-FOD: Hyperspectral Dataset for Foreign Object Detection in Agro-Food Conveyor Systems
+# HSI-AgriFoodAnomaly
 
-This repository hosts the open-access dataset and documentation related to our research on detecting foreign objects in agro-food production lines using hyperspectral imaging (HSI) and RGB.
+**HSI-AgriFoodAnomaly** is the first open-access hyperspectral dataset specifically designed for **anomaly detection in industrial agri-food production environments**. The dataset contains 147 annotated hyperspectral image cubes acquired under realistic conveyor-based conditions, with a wide variety of **visually ambiguous and challenging anomalies** (e.g., plastic, textile, metal, glass, paper, wood, mineral).
 
----
-
-## 📊 Dataset Description
-
-This dataset is the **first publicly available HSI dataset** targeting the detection of foreign objects (FOD) in conveyor systems used in agro-food industries.
-
-It includes:
-- Hyperspectral image cubes (ENVI format)
-- Corresponding RGB images
-- Ground truth annotations (foreign object locations)
-- Multiple classes: plastic, metal, organic residues, etc.
-- Metadata detailing acquisition conditions and spectral ranges
-
-➡️ Full documentation available in `data_description/`.
+This repository includes:
+- The full dataset with RGB projections and pixel-level annotations.
+- A baseline deep learning pipeline for anomaly detection using 2D CNNs adapted to 300-band HSI inputs.
+- Evaluation scripts and pretrained models (coming soon).
 
 ---
 
-## 🧠 Research Context
+## 🌾 Overview
 
-The dataset was collected using a hyperspectral camera over a conveyor belt under real operating conditions. We compared the performance of several Convolutional Neural Network (CNN) models using both HSI and RGB data.
+**Use case:** Inline inspection of oat-based food products (e.g., oat flakes with chocolate chips), simulating real-world production conditions (occlusion, clutter, varying densities).
 
-### 📄 Associated Paper
+**Anomaly types:**  
+- Plastics (rigid fragments and films)  
+- Textiles (cotton, mesh, threads)  
+- Metals (nails, foil, clips, sponges)  
+- Paper (kraft, printed, glossy)  
+- Wood/plant fragments  
+- Minerals/glass (stones, shards)
 
-> **[TITLE OF YOUR PAPER]**  
-> AUTHOR1, AUTHOR2, ...  
-> To appear in *[Journal Name]*, 2025.  
-> [DOI / arXiv link once published]
-
----
-
-## 💾 Accessing the Dataset
-
-The dataset is currently under private preparation and will be released upon publication.
-
-After public release, it will be downloadable from:
-- [GitHub Releases](#)
-- [Zenodo DOI](#) *(if applicable)*
+**Annotations:**  
+- Pixel-level binary masks  
+- RGB projection images  
+- Anomaly-free samples included  
 
 ---
 
-## 🛠 Project Structure
+## 📷 Dataset Summary
 
+| Item                    | Value                            |
+|-------------------------|----------------------------------|
+| Total scenes            | 147 HSI cubes                    |
+| Spectral range          | 400–1000 nm (VNIR)               |
+| Number of bands         | 300                              |
+| Spatial resolution      | 1000 × 900 pixels                |
+| Annotation format       | Binary masks (PNG)               |
+| Acquisition setup       | Conveyor + pushbroom HSI camera |
+| File formats            | `.hdr` + `.raw` + `.png`         |
+
+---
+
+## 🧪 Baseline Method
+
+We provide a simple but effective **real-time anomaly detection pipeline** using standard 2D convolutional neural networks (CNNs) adapted to hyperspectral inputs.
+
+- CNN models used: MobileNetV2, ResNet18/50, TinyNet, EfficientNet, MixNet
+- Input patch sizes: 100×100, 200×200, 300×300
+- Binary classification: anomaly vs. clean
+- Performance reported using accuracy, F1-score, AUC, MCC
+- Comparison with RGB-only models also included
+
+> 🔧 Full code and training instructions will be provided soon.
+
+---
+
+## 🔗 Citation
+
+If you use this dataset or code, please cite our work:
+
+```bibtex
+@article{bechar2025hsiagrifoodanomaly,
+  title={HSI-AgriFoodAnomaly: An Open Hyperspectral Benchmark for Realistic Anomaly Detection in Food Production},
+  author={Bechar, Mohammed El Amine},
+  journal={Computers and Electronics in Agriculture},
+  year={2025}
+}
