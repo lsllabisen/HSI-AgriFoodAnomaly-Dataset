@@ -91,24 +91,66 @@ We provide a simple but effective **real-time anomaly detection pipeline** using
 
 > Python 3.8+ and a CUDA-enabled GPU are recommended.
 
-#### 1. Install dependencies
-
+#### 1. Clone the repository
+```bash
+git clone https://github.com/lsllabisen/HSI-AgriFoodAnomaly-Dataset.git
+cd HSI-AgriFoodAnomaly-Dataset
+```
+#### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+#### 3. Required Configuration (configs/config.yaml)
+```bash
+project:
+  base_path: /absolute/path/to/your/project           # Root path of the project
+  project_name: YourExperimentName                    # Name of your experiment
 
-#### 2. Extract patches from annotated HSI cubes
+data:
+  train:
+    cube_dir: /path/to/train/HSI-Hypercube            # HSI training data
+    rgb_dir: /path/to/train/RGB/PNG                   # RGB training images
+    mask_dir: /path/to/train/Annotation/PNG           # Annotation masks (training)
+  val:
+    cube_dir: /path/to/val/HSI-Hypercube
+    rgb_dir: /path/to/val/RGB/PNG
+    mask_dir: /path/to/val/Annotation/PNG
+  test:
+    cube_dir: /path/to/test/HSI-Hypercube
+    rgb_dir: /path/to/test/RGB/PNG
+    mask_dir: /path/to/test/Annotation/PNG
 
+model:
+  save_dir: /path/to/save/models                      # Where to save trained models
+
+results:
+  save_dir: /path/to/save/results                     # Where to save output results (.csv, etc.)
+
+```
+#### 4. Extract patches from annotated HSI cubes
 ```bash
 nohup python3 run_data_patching.py
 ```
+This will generate a new folder named after 'project_name' inside 'base_path'.
+This folder will contain the preprocessed data ('patches') organized and ready to be used for training, validation, and testing of CNN models.
 
-#### 3. Train a CNN model
 
+#### 4. Train a CNN model
 ```bash
-nohup python3 run_train.py
+nohup python3 run_train.py --config configs/config.yaml --RGB_HSI RGB --patch_size 300 --gpu 3
 ```
+**Parameters explanation:**
 
+- `--config` : path to your `config.yaml` file  
+- `--RGB_HSI` : specify the data modality for the experiment (`HSI` or `RGB`)  
+- `--patch_size` : patch size to use; options are `100`, `200`, or `300`  
+- `--gpu` : ID of the GPU to use (this script supports **single GPU** execution only)
+---
+
+**Results**
+
+- Trained models are saved in the directory specified by `model.save_dir` in your config file  
+- CSV evaluation results and metrics are saved in the directory specified by `results.save_dir`
 ---
 
 ## 🔗 Citation
