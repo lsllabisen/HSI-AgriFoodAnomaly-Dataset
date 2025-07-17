@@ -181,20 +181,20 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
     <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 1" width="120"/></td>
     <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="RGB Sample 2" width="120"/></td>
     <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="HSI Sample 2" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="RGB Sample 3" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="HSI Sample 3" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="RGB Sample 3" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="HSI Sample 3" width="120"/></td>
   </tr>
   <tr align="center" style="font-weight:bold;">
-    <td>Acc: 0.92<br>F1: 0.88<br>AUC: 0.94<br>MCC: 0.85</td>
-    <td>Acc: 0.95<br>F1: 0.91<br>AUC: 0.97<br>MCC: 0.90</td>
-    <td>Acc: 0.89<br>F1: 0.85<br>AUC: 0.90<br>MCC: 0.80</td>
-    <td>Acc: 0.93<br>F1: 0.89<br>AUC: 0.95<br>MCC: 0.86</td>
-    <td>Acc: 0.88<br>F1: 0.84<br>AUC: 0.89<br>MCC: 0.79</td>
-    <td>Acc: 0.92<br>F1: 0.90<br>AUC: 0.94<br>MCC: 0.87</td>
+    <td>Acc = 0.967<br> F1-score = 0.939<br> AUC = 0.944<br> MCC = 0.917</td>
+    <td>Acc = 0.955<br> F1-score = 0.920<br> AUC = 0.997<br> MCC = 0.890</td>
+    <td>Acc = 0.944<br> F1-score = 0.857<br> AUC = 0.960<br> MCC = 0.823</td>
+    <td>Acc = 0.855<br> F1-score = 0.435<br> AUC = 0.892<br> MCC = 0.440</td>
+    <td>Acc = 0.933<br> F1-score = 0.870<br> AUC = 0.949<br> MCC = 0.826</td>
+    <td>Acc = 0.888<br> F1-score = 0.772<br> AUC = 0.927<br> MCC = 0.705</td>
   </tr>
 </table>
 
-<p align="right"><em>Figure 1: Comparison of RGB and HSI images using the best tinynet_a model with 100×100 patches. Colors indicate prediction overlays: cyan = Anomaly detection, green = ground truth, magenta = overlap (true positives). Performance metrics shown per example: Accuracy (Acc), F1-score (F1), AUC, and MCC.model predictions across 3 test samples.</em></p>
+<p align="left"><em>Figure 1: Comparison of RGB and HSI images using the best tinynet_a model with 100×100 patches. Colors indicate prediction overlays: cyan = Anomaly detection, green = ground truth, magenta = overlap (true positives). Performance metrics shown per example: Accuracy (Acc), F1-score (F1), AUC, and MCC.model predictions across 3 test samples.</em></p>
 
 ---
 
