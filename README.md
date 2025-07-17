@@ -200,6 +200,25 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 
 ---
 
+## 📅 Coming Soon
+
+- ✅ Pretrained models
+- 🧪 Demo notebooks (inference + visualization)
+- 🔗 Dataset link with DOI
+- 🤝 Integration with HuggingFace Datasets
+
+---
+
+## 📬 Contact & Licensing
+
+This dataset and code are released for **non-commercial research and academic use only**.
+
+If you intend to use this work for commercial or industrial purposes, please contact:
+
+**Mohammed El Amine BECHAR**  
+ISEN Ouest  
+📧 mohammed-el-amine.bechar@isen-ouest.yncrea.fr
+---
 
 
 ## 🔗 Citation
@@ -213,3 +232,14 @@ If you use this dataset or code, please cite our work:
   journal={Computers and Electronics in Agriculture},
   year={2025}
 }
+```
+---
+## 🙌 Contributors
+
+- **PhD. Mohammed El Amine BECHAR** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
+- **PhD. Nesma SETTOUTI** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
+- **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+- **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
+- **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
+
