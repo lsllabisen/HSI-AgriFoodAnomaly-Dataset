@@ -73,7 +73,7 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 
 > To Do
 
-## 🧪 Baseline Method
+## Baseline Method
 
 We provide a simple but effective **real-time anomaly detection pipeline** using standard 2D convolutional neural networks (CNNs) adapted to hyperspectral inputs.
 
@@ -131,11 +131,11 @@ results:
 ```bash
 nohup python3 run_data_patching.py
 ```
-This will generate a new folder named after 'project_name' inside 'base_path'.
+This will generate a new folder named after `project_name` inside `base_path`.
 This folder will contain the preprocessed data ('patches') organized and ready to be used for training, validation, and testing of CNN models.
 
 
-#### 4. Train a CNN model
+#### 5. Train a CNN model
 ```bash
 nohup python3 run_train.py --config configs/config.yaml --RGB_HSI RGB --patch_size 300 --gpu 3
 ```
@@ -152,6 +152,45 @@ nohup python3 run_train.py --config configs/config.yaml --RGB_HSI RGB --patch_si
 - Trained models are saved in the directory specified by `model.save_dir` in your config file  
 - CSV evaluation results and metrics are saved in the directory specified by `results.save_dir`
 ---
+
+## Results and Analysis
+
+This work demonstrates that HSI-trained CNNs outperform their RGB-based counterparts, especially for subtle or unseen anomalies.
+
+**Key findings:**
+
+- HSI consistently improves F1-score and MCC
+- Best results with patch size 100×100 using TinyNet and ResNet18
+- RGB models perform well but struggle on visually ambiguous anomalies
+
+---
+
+#### Visual Comparison: RGB vs HSI (3 samples)
+
+<table>
+  <tr>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 1" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_RGB_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 1" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 2" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_RGB_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 2" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 3" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_RGB_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 3" width="120"/></td>
+  </tr>
+  <tr align="center" style="font-weight:bold;">
+    <td>Acc: 0.92<br>F1: 0.88<br>AUC: 0.94<br>MCC: 0.85</td>
+    <td>Acc: 0.95<br>F1: 0.91<br>AUC: 0.97<br>MCC: 0.90</td>
+    <td>Acc: 0.89<br>F1: 0.85<br>AUC: 0.90<br>MCC: 0.80</td>
+    <td>Acc: 0.93<br>F1: 0.89<br>AUC: 0.95<br>MCC: 0.86</td>
+    <td>Acc: 0.88<br>F1: 0.84<br>AUC: 0.89<br>MCC: 0.79</td>
+    <td>Acc: 0.92<br>F1: 0.90<br>AUC: 0.94<br>MCC: 0.87</td>
+  </tr>
+</table>
+
+<p align="center"><em>Figure 1: Comparison of RGB and HSI model predictions across 3 test samples.</em></p>
+
+---
+
+
 
 ## 🔗 Citation
 
