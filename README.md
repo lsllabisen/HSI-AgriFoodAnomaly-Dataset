@@ -13,7 +13,9 @@ This repository includes:
 
 ---
 
-## Overview
+## Dataset Overview
+
+The dataset was constructed through a carefully controlled acquisition pipeline that simulates industrial food inspection. It captures a wide variety of **realistic and challenging anomalies** placed in **diverse, non-trivial scenes**. Each hyperspectral cube is annotated at the pixel level, allowing the training of models for multiple computer vision tasks.
 
 **Use case:** Inline inspection of oat-based food products (e.g., oat flakes with chocolate chips), simulating real-world production conditions (occlusion, clutter, varying densities).
 
@@ -24,13 +26,15 @@ This repository includes:
 - Paper (kraft, printed, glossy)  
 - Wood/plant fragments  
 - Minerals/glass (stones, shards)
+- Mixed anomaly scenes
+- Anomaly-free samples
+- New anomalies
 
 **Annotations:**  
 - Pixel-level binary masks  
-- RGB projection images  
-- Anomaly-free samples included  
 
-**Dataset Description:**  
+
+**Setup Description:**  
 
 | Property             | Value                          |
 |----------------------|--------------------------------|
@@ -43,17 +47,54 @@ This repository includes:
 ---
 
 
+**Dataset Split Summary:**  
+
+
+| Category                              | Train | Val | Test | Total |
+|---------------------------------------|:-----:|:---:|:----:|:-----:|
+| Textile and fiber-based materials     |  40   |  8  |  16  |  64   |
+| Plastics                              |  20   |  4  |   8  |  32   |
+| Paper-based materials                 |   5   |  1  |   2  |   8   |
+| Metals                                |   5   |  1  |   2  |   8   |
+| Wood, plant-based, minerals, glass    |   5   |  1  |   2  |   8   |
+| Mixed (multi-object scenes)          |   5   |  1  |   2  |   8   |
+| Normal (anomaly-free)                |   9   |  1  |   3  |  13   |
+| For inference only                    |   –   |  –  |   5  |   5   |
+| New anomaly objects (OOD)            |   –   |  –  |   1  |   1   |
+| **Total**                             | **89**|**17**|**41**|**147**|
+
+
+**Dataset Download:**
+
+> **Coming Soon:** Dataset will be downloadable from [data.gouv.fr link]  
+> A guide will be provided for downloading, verifying integrity, and organizing the files.
+
+**Dataset Structure:**
+
+> To Do
+
 ## 🧪 Baseline Method
 
 We provide a simple but effective **real-time anomaly detection pipeline** using standard 2D convolutional neural networks (CNNs) adapted to hyperspectral inputs.
 
 - CNN models used: MobileNetV2, ResNet18/50, TinyNet, EfficientNet, MixNet
-- Input patch sizes: 100×100, 200×200, 300×300
-- Binary classification: anomaly vs. clean
+- Input patch sizes: 300x100×100, 300x200×200, 300x300×300
+- Binary classification: with anomaly vs. without anomaly
 - Performance reported using accuracy, F1-score, AUC, MCC
 - Comparison with RGB-only models also included
 
-> 🔧 Full code and training instructions will be provided soon.
+<div align="center">
+  <img src="Figures/training2.png" alt="Baseline Method" width="90%">
+</div>
+
+## How to Run
+
+> Python 3.8+ and a CUDA-enabled GPU are recommended.
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
 
 ---
 
