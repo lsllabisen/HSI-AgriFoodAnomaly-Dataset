@@ -72,7 +72,7 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 **6. Dataset Structure:**
 
 > To Do
-
+---
 ## Baseline Method
 
 We provide a simple but effective **real-time anomaly detection pipeline** using standard 2D convolutional neural networks (CNNs) adapted to hyperspectral inputs.
@@ -163,7 +163,7 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 - Best results with patch size 100×100 using TinyNet and ResNet18
 - RGB models perform well but struggle on visually ambiguous anomalies
 
-#### Visual Comparison: RGB vs HSI (3 samples)
+**Visual Comparison: RGB vs HSI (3 samples)**
 
 <table>
   <tr align="center" style="font-weight:bold;">
