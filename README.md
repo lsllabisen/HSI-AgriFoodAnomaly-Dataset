@@ -91,15 +91,23 @@ We provide a simple but effective **real-time anomaly detection pipeline** using
 
 > Python 3.8+ and a CUDA-enabled GPU are recommended.
 
-### 1. Install dependencies
+#### 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
+#### 2. Extract patches from annotated HSI cubes
 
+```bash
+nohup python3 run_data_patching.py
+```
 
+#### 3. Train a CNN model
 
+```bash
+nohup python3 run_train.py
+```
 
 ---
 
