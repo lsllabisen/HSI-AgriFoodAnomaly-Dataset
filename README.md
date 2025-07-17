@@ -95,7 +95,11 @@ We provide a simple but effective **real-time anomaly detection pipeline** using
 
 ```bash
 pip install -r requirements.txt
-```bash
+```
+
+
+
+
 
 ---
 
