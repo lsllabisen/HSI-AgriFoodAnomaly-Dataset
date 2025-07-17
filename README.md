@@ -168,13 +168,21 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 #### Visual Comparison: RGB vs HSI (3 samples)
 
 <table>
+  <tr align="center" style="font-weight:bold;">
+    <td>HSI</td>
+    <td>RGB</td>
+    <td>HSI</td>
+    <td>RGB</td>
+    <td>HSI</td>
+    <td>RGB</td>
+  </tr>
   <tr>
     <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 1" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_RGB_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 1" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 2" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_RGB_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 2" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 3" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_RGB_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 3" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 1" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="RGB Sample 2" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="HSI Sample 2" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="RGB Sample 3" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="HSI Sample 3" width="120"/></td>
   </tr>
   <tr align="center" style="font-weight:bold;">
     <td>Acc: 0.92<br>F1: 0.88<br>AUC: 0.94<br>MCC: 0.85</td>
@@ -186,7 +194,7 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
   </tr>
 </table>
 
-<p align="center"><em>Figure 1: Comparison of RGB and HSI model predictions across 3 test samples.</em></p>
+<p align="right"><em>Figure 1: Comparison of RGB and HSI images using the best tinynet_a model with 100×100 patches. Colors indicate prediction overlays: cyan = Anomaly detection, green = ground truth, magenta = overlap (true positives). Performance metrics shown per example: Accuracy (Acc), F1-score (F1), AUC, and MCC.model predictions across 3 test samples.</em></p>
 
 ---
 
