@@ -11,7 +11,6 @@ This repository includes:
 - The full dataset with RGB projections and pixel-level annotations.
 - A baseline deep learning pipeline for anomaly detection using 2D CNNs adapted to 300 HSI-band as input.
 - Scripts for patch extraction, training, evaluation, and visualization.
-
 ---
 
 ## Dataset Overview
@@ -20,7 +19,7 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 
 **Use case:** Inline inspection of oat-based food products (e.g., oat flakes with chocolate chips), simulating real-world production conditions (occlusion, clutter, varying densities).
 
-**Anomaly types:**  
+**1. Anomaly types:**  
 - Plastics (rigid fragments and films)  
 - Textiles (cotton, mesh, threads)  
 - Metals (nails, foil, clips, sponges)  
@@ -31,11 +30,11 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 - Anomaly-free samples
 - New anomalies
 
-**Annotations:**  
+**2. Annotations:**  
 - Pixel-level binary masks  
 
 
-**Setup Description:**  
+**3. Setup Description:**  
 
 | Property             | Value                          |
 |----------------------|--------------------------------|
@@ -45,10 +44,10 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 | Spatial resolution   | 1000 × 900 pixels              |
 | Acquisition setup    | Conveyor-based pushbroom system|
 | Formats              | `.bil`, `.bil.hdr`, `.png`     |
----
 
 
-**Dataset Split Summary:**  
+
+**4. Dataset Split Summary:**  
 
 
 | Category                              | Train | Val | Test | Total |
@@ -65,12 +64,12 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 | **Total**                             | **89**|**17**|**41**|**147**|
 
 
-**Dataset Download:**
+**5. Dataset Download:**
 
 > **Coming Soon:** Dataset will be downloadable from [data.gouv.fr link]  
 > A guide will be provided for downloading, verifying integrity, and organizing the files.
 
-**Dataset Structure:**
+**6. Dataset Structure:**
 
 > To Do
 
@@ -147,7 +146,6 @@ nohup python3 run_train.py --config configs/config.yaml --RGB_HSI RGB --patch_si
 - `--RGB_HSI` : specify the data modality for the experiment (`HSI` or `RGB`)  
 - `--patch_size` : patch size to use; options are `100`, `200`, or `300`  
 - `--gpu` : ID of the GPU to use (this script supports **single GPU** execution only)
----
 
 **Results**
 
@@ -164,8 +162,6 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 - HSI consistently improves F1-score and MCC
 - Best results with patch size 100×100 using TinyNet and ResNet18
 - RGB models perform well but struggle on visually ambiguous anomalies
-
----
 
 #### Visual Comparison: RGB vs HSI (3 samples)
 
