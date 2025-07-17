@@ -1,0 +1,42 @@
+project:
+  base_path: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/Exp_V1_On_Amine_Data/Supervised/DataSetPaper/dataset/hsi_data_patching/PushBroom
+  project_name: Exp_1_UseCase_1_(Avoine1) #UseCase_1_(Avoine1)
+  
+data:
+  shape: 
+    w: 1000
+    h: 900
+    b: 300
+  num_classes: 1
+  train:
+    cube_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/train/HSI-Hybercube
+    rgb_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/train/RGB/PNG
+    mask_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/train/Annotation/PNG
+  val:
+    cube_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/val/HSI-Hybercube
+    rgb_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/val/RGB/PNG
+    mask_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/val/Annotation/PNG
+  test:
+    cube_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/test/HSI-Hybercube
+    rgb_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/test/RGB/PNG
+    mask_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/DataSets/PushBroom/UseCase_1_(Avoine1)/Anomaly_Easy/test/Annotation/PNG
+
+patch_formats:
+  - {n_lines: 100, patch_size: 100, stride_lines: 50,  stride_cols: 50,  full_width: false}
+  - {n_lines: 200, patch_size: 200, stride_lines: 100, stride_cols: 100, full_width: false}
+  - {n_lines: 300, patch_size: 300, stride_lines: 200, stride_cols: 200, full_width: false}
+
+
+model:
+  names: ["resnet18", "resnet50", "mobilenetv2_100", "tinynet_a", efficientnet_b0, "tf_mixnet_s"]
+  in_chans: 300
+  num_classes: 1
+  save_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/Exp_V1_On_Amine_Data/Supervised/DataSetPaper/models
+
+training:
+  epochs: 100
+  lr: 0.0001
+  batch_size: 64
+
+results:
+  save_dir: /mnt/lslteam/SIIRI/CodePythonSIIRI/HSI_Datasets_LSL_(Amine)/Exp_V1_On_Amine_Data/Supervised/DataSetPaper/results
