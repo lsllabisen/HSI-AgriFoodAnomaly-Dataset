@@ -3,6 +3,7 @@
 <div align="center">
   <img src="Figures/Convoyeur3.png" alt="HSI-AgriFoodAnomaly overview" width="80%">
 </div>
+<p align="left"><em>Figure 1: Real-time acquisition setup: A pushbroom hyperspectral camera captures the conveyor line-by-line. After acquiring `n` lines, the resulting sub-cube is analyzed via CNN inference to detect potential anomaly.</em></p>
 
 **HSI-AgriFoodAnomaly** is the first open-access hyperspectral dataset specifically designed for **anomaly detection in industrial agri-food production environments**. The dataset contains 147 annotated hyperspectral image cubes acquired under realistic conveyor-based conditions, with a wide variety of **visually ambiguous and challenging anomalies** (e.g., plastic, textile, metal, glass, paper, wood, mineral).
 
@@ -86,6 +87,7 @@ We provide a simple but effective **real-time anomaly detection pipeline** using
 <div align="center">
   <img src="Figures/training2.png" alt="Baseline Method" width="90%">
 </div>
+<p align="left"><em>Figure 2: Training pipeline: Hyperspectral cubes are labeled, patched, and classified based on the presence or absence of anomalies. These patches are used to train a CNN model for binary classification.</em></p>
 
 ## How to Run
 
@@ -194,7 +196,7 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
   </tr>
 </table>
 
-<p align="left"><em>Figure 1: Comparison of RGB and HSI images using the best tinynet_a model with 100×100 patches. Colors indicate prediction overlays: cyan = Anomaly detection, green = ground truth, magenta = overlap (true positives). Performance metrics shown per example: Accuracy (Acc), F1-score (F1), AUC, and MCC.model predictions across 3 test samples.</em></p>
+<p align="left"><em>Figure 3: Comparison of RGB and HSI images using the best tinynet_a model with 100×100 patches. Colors indicate prediction overlays: cyan = Anomaly detection, green = ground truth, magenta = overlap (true positives). Performance metrics shown per example: Accuracy (Acc), F1-score (F1), AUC, and MCC.model predictions across 3 test samples.</em></p>
 
 ---
 
