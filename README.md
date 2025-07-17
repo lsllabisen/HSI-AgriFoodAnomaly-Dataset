@@ -200,41 +200,40 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 
 ---
 
-## 📅 Coming Soon
+## Coming Soon
 
-- ✅ Pretrained models
-- 🧪 Demo notebooks (inference + visualization)
-- 🔗 Dataset link with DOI
-- 🤝 Integration with HuggingFace Datasets
+We plan to:
+
+- Add more complex and fine-grained anomalies (e.g. small or partially occluded objects)
+- Extend the dataset to new industrial use cases: meat products, nuts, coffee beans, ready-to-eat meals
+- Enhance diversity and realism to support real-world agri-food inspection systems
 
 ---
 
-## 📬 Contact & Licensing
+## Contact & Licensing
 
 This dataset and code are released for **non-commercial research and academic use only**.
 
 If you intend to use this work for commercial or industrial purposes, please contact:
 
-**Mohammed El Amine BECHAR**  
-ISEN Ouest  
-📧 mohammed-el-amine.bechar@isen-ouest.yncrea.fr
+- **PhD. Mohammed El Amine BECHAR** — mohammed-el-amine.bechar@isen-ouest.yncrea.fr
 ---
 
 
-## 🔗 Citation
+## Citation
 
 If you use this dataset or code, please cite our work:
 
 ```bibtex
 @article{bechar2025hsiagrifoodanomaly,
-  title={HSI-AgriFoodAnomaly: An Open Hyperspectral Benchmark for Realistic Anomaly Detection in Food Production},
+  title={HSI-AgriFoodAnomaly: A Hyperspectral Dataset for Anomaly Detection in the Agro-Food Industrial Sector},
   author={Bechar, Mohammed El Amine},
   journal={Computers and Electronics in Agriculture},
   year={2025}
 }
 ```
 ---
-## 🙌 Contributors
+## Contributors
 
 - **PhD. Mohammed El Amine BECHAR** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nesma SETTOUTI** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
