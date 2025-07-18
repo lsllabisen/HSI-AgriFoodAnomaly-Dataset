@@ -66,8 +66,11 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 
 **5. Dataset Download:**
 
-> **Coming Soon:** Dataset will be downloadable from [data.gouv.fr link]  
-> A guide will be provided for downloading, verifying integrity, and organizing the files.
+The dataset is intended for **scientific research purposes only** and **not for commercial use**.  
+However, commercial use **may be permitted upon request and authorization**.
+
+You can access the dataset here:  
+[https://entrepot.recherche.data.gouv.fr/your-dataset-link](https://entrepot.recherche.data.gouv.fr/your-dataset-link)
 
 **6. Dataset Structure:**
 
