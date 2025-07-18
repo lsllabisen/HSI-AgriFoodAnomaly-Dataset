@@ -213,12 +213,12 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
     <td>RGB</td>
   </tr>
   <tr>
-    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 1" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 1" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="RGB Sample 2" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="HSI Sample 2" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="RGB Sample 3" width="120"/></td>
-    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="HSI Sample 3" width="120"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="RGB Sample 1" width="130"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_Inf_2.png" alt="HSI Sample 1" width="130"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="RGB Sample 2" width="130"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_L6_8.png" alt="HSI Sample 2" width="130"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_rgb_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="RGB Sample 3" width="130"/></td>
+    <td><img src="Figures/tinynet_a_100_Pred_HSI_UseCase_1_(Avoine1)_Anomaly_Easy_NL_1.png" alt="HSI Sample 3" width="130"/></td>
   </tr>
   <tr align="center" style="font-weight:bold;">
     <td>Acc = 0.967<br> F1-score = 0.939<br> AUC = 0.944<br> MCC = 0.917</td>
