@@ -200,9 +200,9 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 
 We plan to:
 
-- Add more complex and fine-grained anomalies (e.g. small or partially occluded objects)
-- Extend the dataset to new industrial use cases: meat products, nuts, coffee beans, ready-to-eat meals
-- Enhance diversity and realism to support real-world agri-food inspection systems
+🔜 Add more complex and fine-grained anomalies (e.g. small or partially occluded objects)
+🔜 Extend the dataset to new industrial use cases: meat products, nuts, coffee beans, ready-to-eat meals
+🔜 Enhance diversity and realism to support real-world agri-food inspection systems
 
 ---
 
@@ -212,7 +212,7 @@ This dataset and code are released for **non-commercial research and academic us
 
 If you intend to use this work for commercial or industrial purposes, please contact:
 
-- **PhD. Mohammed El Amine BECHAR** — mohammed-el-amine.bechar@isen-ouest.yncrea.fr
+- **PhD. Mohammed El Amine BECHAR** (*Project lead and main developer*) — mohammed-el-amine.bechar@isen-ouest.yncrea.fr
 ---
 
 
@@ -231,7 +231,7 @@ If you use this dataset or code, please cite our work:
 ---
 ## Contributors
 
-- **PhD. Mohammed El Amine BECHAR** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
+- **PhD. Mohammed El Amine BECHAR** (*Project lead and main developer*) — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nesma SETTOUTI** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
