@@ -71,7 +71,42 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 
 **6. Dataset Structure:**
 
-> To Do
+```plaintext
+Anomaly_Easy/
+├── train/
+│   ├── Annotation/
+│   │   ├── JSON/
+│   │   │   ├── train_UseCase_1_(Avoine1)_Anomaly_Easy.json
+│   │   ├── PNG/
+│   │   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_1.png
+│   │   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_2.png
+│   │   │   ├── ...
+│   ├── HSI-Hybercube/
+│   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_1.bil
+│   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_1.bil.hdr
+│   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_2.bil
+│   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_2.bil.hdr
+│   │   ├── ...
+│   ├── RGB/
+│   │   ├── PNG/
+│   │   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_1.png
+│   │   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_2.png
+│   │   │   ├── ...
+│   │   ├── TIFF/
+│   │   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_1.tiff
+│   │   │   ├── UseCase_1_(Avoine1)_Anomaly_Easy_L1_2.tiff
+│   │   │   ├── ...
+├── val/
+│   ├── Annotation/
+│   │   ├── JSON/
+│   │   ├── PNG/
+│   ├── HSI-Hybercube/
+│   ├── RGB/
+│   │   ├── PNG/
+│   │   ├── TIFF/
+├── test/
+```
+
 ---
 ## Baseline Method
 
