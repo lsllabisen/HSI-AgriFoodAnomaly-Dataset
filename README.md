@@ -230,7 +230,7 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
   </tr>
 </table>
 
-<p align="left"><em>Figure 3: Comparison of RGB and HSI images using the best tinynet_a model with 100×100 patches. Colors indicate prediction overlays: cyan = Anomaly detection, green = ground truth, magenta = overlap (true positives). Performance metrics shown per example: Accuracy (Acc), F1-score (F1), AUC, and MCC.model predictions across 3 test samples.</em></p>
+<p align="left"><em>Figure 3: Anomaly detection results on HSI-cubes and RGB images using the best tinynet_a model with 100 x 100 patches. Colors indicate prediction overlays: cyan = anomaly prediction, green = ground truth, magenta and orange = overlap (true positives). Performance metrics shown per example: Acc, F1-score, AUC, and MCC.</em></p>
 
 ---
 
