@@ -200,9 +200,9 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
 
 We plan to:
 
-🔜 Add more complex and fine-grained anomalies (e.g. small or partially occluded objects)
-🔜 Extend the dataset to new industrial use cases: meat products, nuts, coffee beans, ready-to-eat meals
-🔜 Enhance diversity and realism to support real-world agri-food inspection systems
+- 🔜 Add more complex and fine-grained anomalies (e.g. small or partially occluded objects)
+- 🔜 Extend the dataset to new industrial use cases: meat products, nuts, coffee beans, ready-to-eat meals
+- 🔜 Enhance diversity and realism to support real-world agri-food inspection systems
 
 ---
 
