@@ -3,7 +3,7 @@
 <div align="center">
   <img src="Figures/Convoyeur3.png" alt="HSI-AgriFoodAnomaly overview" width="80%">
 </div>
-<p align="left"><em>Figure 1: Real-time acquisition setup: A pushbroom hyperspectral camera captures the conveyor line-by-line. After acquiring `n` lines, the resulting sub-cube is analyzed via CNN inference to detect potential anomaly.</em></p>
+<p align="left"><em>Figure 1: Real-time acquisition setup: A pushbroom hyperspectral camera captures the conveyor line-by-line. After acquiring 'n' lines, the resulting sub HSI-cube is analyzed via CNN inference to detect potential anomalies.</em></p>
 
 **HSI-AgriFoodAnomaly** is the first open-access hyperspectral dataset specifically designed for **anomaly detection in industrial agri-food production environments**. The dataset contains 147 annotated hyperspectral image cubes acquired under realistic conveyor-based conditions, with a wide variety of **visually ambiguous and challenging anomalies** (e.g., plastic, textile, metal, glass, paper, wood, mineral).
 
@@ -124,7 +124,7 @@ We provide a simple but effective **real-time anomaly detection pipeline** using
 <div align="center">
   <img src="Figures/training2.png" alt="Baseline Method" width="90%">
 </div>
-<p align="left"><em>Figure 2: Training pipeline: Hyperspectral cubes are labeled, patched, and classified based on the presence or absence of anomalies. These patches are used to train a CNN model for binary classification.</em></p>
+<p align="left"><em>Figure 2: Training pipeline: Labeled HSI-cubes are patched and separated into patches with / without anomalies. These labeled patches are used to train a CNN model for binary classification.</em></p>
 
 ## How to Run
 
