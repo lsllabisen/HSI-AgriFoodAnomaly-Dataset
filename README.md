@@ -3,7 +3,7 @@
 <div align="center">
   <img src="Figures/Convoyeur3.png" alt="HSI-AgriFoodAnomaly overview" width="80%">
 </div>
-<p align="left"><em>Figure 1: Real-time acquisition setup: A pushbroom hyperspectral camera captures the conveyor line-by-line. After acquiring 'n' lines, the resulting sub HSI-cube is analyzed via CNN inference to detect potential anomalies.</em></p>
+<p align="left"><em>Figure 1: Acquisition setup: A pushbroom hyperspectral camera captures the conveyor line-by-line. After acquiring n lines, the resulting HSI-cube is prepared then analyzed via CNN inference to detect potential anomalies.</em></p>
 
 **HSI-AgriFoodAnomaly** is the first open-access hyperspectral dataset specifically designed for **anomaly detection in industrial agri-food production environments**. The dataset contains 147 annotated hyperspectral image cubes acquired under realistic conveyor-based conditions, with a wide variety of **visually ambiguous and challenging anomalies** (e.g., plastic, textile, metal, glass, paper, wood, mineral).
 
@@ -230,7 +230,7 @@ This work demonstrates that HSI-trained CNNs outperform their RGB-based counterp
   </tr>
 </table>
 
-<p align="left"><em>Figure 3: Anomaly detection results on HSI-cubes and RGB images using the best tinynet_a model with 100 x 100 patches. Colors indicate prediction overlays: cyan = anomaly prediction, green = ground truth, magenta and orange = overlap (true positives). Performance metrics shown per example: Acc, F1-score, AUC, and MCC.</em></p>
+<p align="left"><em>Figure 3: FO anomaly detection results on HSI-cubes and RGB images using the best tinynet_a model with 100 x 100 patches. Colors indicate prediction overlays: teal and cyan = FO anomaly prediction, green = ground truth (False positives), magenta, violet and orange = overlap (True positives). Performance metrics shown per example: Acc, F1-score, AUC, and MCC.</em></p>
 
 ---
 
@@ -269,6 +269,7 @@ Paper Under Review
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
 
