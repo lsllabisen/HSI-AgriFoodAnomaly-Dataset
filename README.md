@@ -262,14 +262,14 @@ If you use this dataset or code, please cite our work:
 Paper Under Review
 ```
 
-%```bibtex
-%@article{bechar2025hsiagrifoodanomaly,
-%  title={HSI-AgriFoodAnomaly: A Hyperspectral Dataset for Anomaly Detection in the Agro-Food Industrial Sector},
-%  author={Bechar, Mohammed El Amine},
-%  journal={Computers and Electronics in Agriculture},
-%  year={2025}
-%}
-```
+#```bibtex
+#@article{bechar2025hsiagrifoodanomaly,
+#  title={HSI-AgriFoodAnomaly: A Hyperspectral Dataset for Anomaly Detection in the Agro-Food Industrial Sector},
+#  author={Bechar, Mohammed El Amine},
+#  journal={Computers and Electronics in Agriculture},
+#  year={2025}
+#}
+#```
 ---
 ## Contributors
 
@@ -278,6 +278,7 @@ Paper Under Review
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
 
