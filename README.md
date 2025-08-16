@@ -70,7 +70,7 @@ The dataset is intended for **scientific research purposes only** and **not for 
 However, commercial use **may be permitted upon request and authorization**.
 
 You can access the dataset here:  
-[https://entrepot.recherche.data.gouv.fr/your-dataset-link](https://entrepot.recherche.data.gouv.fr/your-dataset-link)
+[https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/QTLG7X](https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/QTLG7X)
 
 **6. Dataset Structure:**
 
@@ -259,12 +259,16 @@ If you intend to use this work for commercial or industrial purposes, please con
 If you use this dataset or code, please cite our work:
 
 ```bibtex
-@article{bechar2025hsiagrifoodanomaly,
-  title={HSI-AgriFoodAnomaly: A Hyperspectral Dataset for Anomaly Detection in the Agro-Food Industrial Sector},
-  author={Bechar, Mohammed El Amine},
-  journal={Computers and Electronics in Agriculture},
-  year={2025}
-}
+Paper Under Review
+```
+
+%```bibtex
+%@article{bechar2025hsiagrifoodanomaly,
+%  title={HSI-AgriFoodAnomaly: A Hyperspectral Dataset for Anomaly Detection in the Agro-Food Industrial Sector},
+%  author={Bechar, Mohammed El Amine},
+%  journal={Computers and Electronics in Agriculture},
+%  year={2025}
+%}
 ```
 ---
 ## Contributors
@@ -274,5 +278,6 @@ If you use this dataset or code, please cite our work:
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
