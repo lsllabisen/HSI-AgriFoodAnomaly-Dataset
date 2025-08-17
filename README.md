@@ -263,14 +263,12 @@ Paper Under Review
 ---
 ## Contributors
 
-<a href="[https://github.com/utilisateur1](https://github.com/MEABECHAR)">
-  <img src="https://avatars.githubusercontent.com/u/MEABECHAR?v=4" width="80" style="border-radius: 50%;" alt="utilisateur1"/>
-</a>
 - **PhD. Mohammed El Amine BECHAR** (*Project lead and main developer*) — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nesma SETTOUTI** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
 
