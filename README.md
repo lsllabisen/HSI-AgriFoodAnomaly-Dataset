@@ -264,11 +264,12 @@ Paper Under Review
 ---
 ## Contributors
 
-- **PhD. Mohammed El Amine BECHAR** (*Project lead and main developer*) — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
+- [![Alice](https://github.com/aliceGitHub.png?size=50)](https://github.com/aliceGitHub)  **PhD. Mohammed El Amine BECHAR** (*Project lead and main developer*) — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nesma SETTOUTI** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
 
