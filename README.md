@@ -57,9 +57,8 @@ The dataset was constructed through a carefully controlled acquisition pipeline 
 | Paper-based materials                 |   5   |  1  |   2  |   8   |
 | Metals                                |   5   |  1  |   2  |   8   |
 | Wood, plant-based, minerals, glass    |   5   |  1  |   2  |   8   |
-| Mixed (multi-object scenes)           |   5   |  1  |   2  |   8   |
+| Mixed (multi-object scenes)           |   5   |  1  |   7  |   13  |
 | Normal (anomaly-free)                 |   9   |  1  |   3  |  13   |
-| For inference only                    |   –   |  –  |   5  |   5   |
 | New anomaly objects                   |   –   |  –  |   1  |   1   |
 | **Total**                             | **89**|**17**|**41**|**147**|
 
@@ -269,6 +268,7 @@ Paper Under Review
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
 
