@@ -255,10 +255,18 @@ If you intend to use this work for commercial or industrial purposes, please con
 
 ## Citation
 
-If you use this dataset or code, please cite our work:
+If you use this dataset or code, please cite our works:
 
 ```bibtex
-Paper Under Review
+@data{MEABDataSet,
+author = {Mohammed El Amine BECHAR and Nadine ABDALLAH SAAB and Olga ASSAINOVA and Nesma SETTOUTI and Marwa EL BOUZ},
+publisher = {Recherche Data Gouv},
+title = {{HSI-AgriFoodAnomaly: A Hyperspectral Dataset for Anomaly Detection in the Agri-Food Industrial Inspection}},
+year = {2025},
+version = {V1},
+doi = {10.57745/QTLG7X},
+url = {https://doi.org/10.57745/QTLG7X}
+}
 ```
 ---
 ## Contributors
@@ -268,6 +276,7 @@ Paper Under Review
 - **PhD. Nadine ABDALLAH SAAB** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
 - **PhD. Olga ASSAINOVA** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest
 - **PhD. Marwa EL BOUZ** — Researcher at [L@bISEN](https://isen-lille.fr/laboratoire-de-recherche-labisen/), ISEN Ouest 
+
 
 
 
