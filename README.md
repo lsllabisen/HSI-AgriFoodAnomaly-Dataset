@@ -108,7 +108,110 @@ Anomaly_Easy/
 │   │   ├── TIFF/
 ├── test/
 ```
+## 7. Supported Tasks and Annotation Usage
 
+The pixel-level polygon annotations provided in JSON format 
+support three computer vision tasks:
+
+### 7.1 Binary Classification
+Each HSI-cube can be partitioned into spatial patches, each 
+labelled as containing a foreign object (FO) or not, based 
+on the overlap between the patch region and the binary PNG 
+mask. This is the task used in the baseline pipeline provided 
+in this repository.
+
+### 7.2 Semantic Segmentation
+The binary PNG masks (pixel values: 0 = background, 
+255 = FO) are spatially aligned with the HSI cubes and RGB 
+images, and can be used directly as ground-truth segmentation 
+maps for pixel-wise FO detection models.
+
+### 7.3 Object Detection
+The polygon annotations stored in the JSON files can be 
+converted to axis-aligned bounding boxes for object detection 
+tasks. For each polygon, the bounding box is obtained by 
+computing the minimum and maximum coordinates of the polygon 
+vertices.
+
+The following script illustrates how to extract bounding 
+boxes from the JSON annotations:
+
+```python
+import json
+
+def get_bounding_boxes(json_path):
+    """
+    Extract axis-aligned bounding boxes from Label Studio
+    polygon annotations.
+
+    Args:
+        json_path : path to the JSON annotation file
+
+    Returns:
+        list of dict:
+            {
+                'image'  : scene filename,
+                'boxes'  : list of [x_min, y_min, x_max, y_max]
+                           in absolute pixel coordinates,
+                'width'  : original image width (pixels),
+                'height' : original image height (pixels)
+            }
+    """
+    with open(json_path, 'r') as f:
+        data = json.load(f)
+
+    results = []
+
+    for item in data:
+        image_name = item['image']
+        boxes      = []
+
+        for label in item.get('label', []):
+            points = label['points']          # [[x%, y%], ...]
+            W      = label['original_width']
+            H      = label['original_height']
+
+            # Convert percentage coordinates to absolute pixels
+            xs = [p[0] * W / 100.0 for p in points]
+            ys = [p[1] * H / 100.0 for p in points]
+
+            x_min = int(min(xs))
+            y_min = int(min(ys))
+            x_max = int(max(xs))
+            y_max = int(max(ys))
+
+            boxes.append([x_min, y_min, x_max, y_max])
+
+        results.append({
+            'image' : image_name,
+            'boxes' : boxes,
+            'width' : W,
+            'height': H
+        })
+
+    return results
+
+
+# Example usage
+json_path = 'Anomaly_Easy/test/Annotation/JSON/test_UseCase_1_(Avoine1)_Anomaly_Easy.json'
+annotations = get_bounding_boxes(json_path)
+
+for ann in annotations[:3]:
+    print(f"Scene : {ann['image']}")
+    print(f"  Image size : {ann['width']} x {ann['height']}")
+    for i, box in enumerate(ann['boxes']):
+        print(f"  Box {i+1} : x_min={box[0]}, y_min={box[1]}, "
+              f"x_max={box[2]}, y_max={box[3]}")
+```
+
+**Output example:**
+```
+Scene : UseCase_1_(Avoine1)_Anomaly_Easy_Inf_1.png
+  Image size : 1000 x 900
+  Box 1 : x_min=764, y_min=240, x_max=812, y_max=649
+  Box 2 : x_min=312, y_min=105, x_max=578, y_max=387
+  ...
+```
 ---
 ## Baseline Method
 
